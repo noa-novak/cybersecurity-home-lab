@@ -19,13 +19,13 @@ The Windows Server was configured as an Active Directory Domain Controller for t
 
 The configured domain information was verified using PowerShell.
 
-![Active Directory domain information](domain-info.png)
+![Active Directory domain information](evidence/domain-info.png)
 
 ## Domain Controller
 
 The server was verified as a domain controller running Windows Server 2025.
 
-![Domain controller information](domain-controller.png)
+![Domain controller information](evidence/domain-controller.png)
 
 ## Domain Client
 
@@ -33,7 +33,7 @@ A Windows 11 virtual machine was joined to the `lab.local` domain.
 
 The domain membership was verified from the Windows 11 client.
 
-![Windows 11 domain membership](domain-client.png)
+![Windows 11 domain membership](evidence/domain-client.png)
 
 ## Result
 
