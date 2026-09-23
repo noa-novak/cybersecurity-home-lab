@@ -6,43 +6,37 @@ The objective of this stage was to create a Windows Server 2025 Active Directory
 
 ## Lab Environment
 
-- Host OS: Fedora Linux
-- Virtualization: Virtual Machine Manager
 - Server OS: Windows Server 2025
 - Client OS: Windows 11
 - Domain: `lab.local`
 - Domain Controller: `WIN-SRV01`
+- Host OS: Fedora Linux
+- Virtualization: Virtual Machine Manager
 
-## Implementation
+## Active Directory Domain
 
-Windows Server 2025 was configured as an Active Directory Domain Controller.
+The Windows Server was configured as an Active Directory Domain Controller for the `lab.local` domain.
 
-The server provides:
+The configured domain information was verified using PowerShell.
 
-- Active Directory Domain Services (AD DS)
-- DNS
-- Domain authentication
-- Centralized user and group management
+![Active Directory domain information](domain-info.png)
 
-A Windows 11 virtual machine was joined to the `lab.local` domain and used as the domain client.
+## Domain Controller
 
-## Domain Structure
+The server was verified as a domain controller running Windows Server 2025.
 
-The following organizational units were created:
+![Domain controller information](domain-controller.png)
 
-- HR
-- IT
-- Management
-- Groups
+## Domain Client
 
-The organizational units are used to organize users and security objects within the domain.
+A Windows 11 virtual machine was joined to the `lab.local` domain.
 
-## Verification
+The domain membership was verified from the Windows 11 client.
 
-The Windows 11 client was successfully joined to the `lab.local` domain.
-
-Domain users were able to authenticate on the Windows 11 client using their Active Directory credentials.
+![Windows 11 domain membership](domain-client.png)
 
 ## Result
 
-The basic Active Directory infrastructure is operational and provides centralized authentication and identity management for the lab.
+The Active Directory domain was successfully configured and a Windows 11 client was successfully joined to the domain.
+
+The environment now provides centralized authentication and identity management for the lab.
