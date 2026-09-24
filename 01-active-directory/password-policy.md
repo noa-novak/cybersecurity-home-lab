@@ -78,14 +78,14 @@ The test consisted of:
 The account can be checked with:
 
 ```powershell
-Get-ADUser "Sarah Weber" -Properties LockedOut |
+Get-ADUser "sarah.weber" -Properties LockedOut |
 Select-Object Name,Enabled,LockedOut
 ```
 
 An administrator can unlock the account with:
 
 ```powershell
-Unlock-ADAccount -Identity "Sarah Weber"
+Unlock-ADAccount -Identity "sarah.weber"
 ```
 
 ### Evidence
